@@ -26,3 +26,12 @@ In short, it can be included in your flow as -
 ```
 
 There are example templates at `src/main/resources/templates/vm/`.
+
+### Run Demo
+Clone this project and build with `mvn package`. Deploy the mule application generated in `target` folder to mule and run `http://localhost:8081/templates/vm`. Here is a screenshot -
+
+![Mule Velocity Template Transformer](demo-screens/Velocity_Template_Parser.png)
+
+
+## License
+It's MIT, so enjoy!
