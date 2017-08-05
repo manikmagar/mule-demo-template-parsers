@@ -1,0 +1,14 @@
+#parse( "templates/vm/header.vm" )
+
+	<h1>#[flowVars.headerText]</h1>
+	<hr>
+	
+	<table>
+		<tr><th>Key</th><th>Value</th></tr>
+	#foreach( $record in $message.payload )
+	#set( $rowIdx = $foreach.count % 2 )
+	    <tr><td id="row$rowIdx" >$record.key</td><td>$record.value</td></tr>
+	#end
+	</table>
+
+#parse( "templates/vm/footer.vm" )

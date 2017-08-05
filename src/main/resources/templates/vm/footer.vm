@@ -1,0 +1,7 @@
+	</div>
+	
+	<footer>
+		<div> App name: #[app.name] </div>
+	</footer>
+
+</body>
